@@ -4,7 +4,7 @@ data = [10, 20, 43, 1, 2, 65, 17, 44, 2, 3, 1]
 
 heapq.heapify(data)
 print(data)
-"""
+'''
 first child: 2*i+1
 second child: 2*i+2
 find parent: (i-1)/2 (using integer division)
@@ -16,7 +16,7 @@ using the `data` list:
 2  2  65  43
 
 and so on...
-"""
+'''
 
 # Get element with highest priority
 # (heapq is a min heap by default)

@@ -1,7 +1,11 @@
+'''
+Singly and doubly linked list implementation
+'''
 from typing import Iterator, Generator, Any, List
 
 
 class Node:
+
     def __init__(self, value: Any, next_node: 'Node' = None, prev_node: 'Node' = None) -> None:
         self.value = value
         self.next = next_node
@@ -12,6 +16,7 @@ class Node:
 
 
 class LinkedList:
+
     def __init__(self, values: Node = None) -> None:
         self.head = None
         self.tail = None
