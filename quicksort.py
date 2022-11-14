@@ -3,7 +3,7 @@ Quicksort algorithm implementation
 '''
 
 
-def quicksort(list, left, right):
+def quicksort(list: list, left: int, right: int) -> None:
     if left >= right:
         return
 
@@ -13,7 +13,7 @@ def quicksort(list, left, right):
     quicksort(list, pivot + 1, right)
 
 
-def partition(list, left, right):
+def partition(list: list, left: int, right: int) -> int:
     pivot = list[right]  # arbitrarily picking the last node
 
     i = left - 1
@@ -25,7 +25,7 @@ def partition(list, left, right):
     return i+1
 
 
-def main():
+def main() -> None:
     a1 = [3, 2, 1]
     a2 = [1, 2, 3]
     a3 = []
