@@ -48,9 +48,9 @@ class BinarySearchTree():
 
     def find(self, data: Any) -> bool:
         '''
-        Find node with the given `data` element
+        Find node with the given `data` element.
 
-        :returns bool: `True` if found, `False` if not found or tree is empty
+        :returns bool: `True` if found, `False` if not found or tree is empty.
         '''
         if self.root:
             return self._find(data, self.root)
@@ -63,7 +63,7 @@ class BinarySearchTree():
 
         :param Any data: the data that is being found.
         :param Node cur_node: the node being evaluated against `data`.
-        :returns bool: `True` if found, `False` otherwise
+        :returns bool: `True` if found, `False` otherwise.
         '''
         if data > cur_node.data and cur_node.right:
             return self._find(data, cur_node.right)
