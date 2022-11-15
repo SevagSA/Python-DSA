@@ -4,6 +4,16 @@ Quicksort algorithm implementation
 
 
 def quicksort(list: list, left: int, right: int) -> None:
+    '''
+    Calls `partition()` recursively on each side of the list after dividing it
+    in two.
+
+    :param list list: the list that will be sorted
+    :param int left: the index of where the sorting will start on the given list
+        (the left side of the list)
+    :param int right: the index of where the sorting will end on the given list
+        (the right side of the list)
+    '''
     if left >= right:
         return
 
@@ -14,6 +24,17 @@ def quicksort(list: list, left: int, right: int) -> None:
 
 
 def partition(list: list, left: int, right: int) -> int:
+    '''
+    Sorts the given list and returns the middle point
+
+    :param list list: the list that will be partitioned
+    :param int left: the index of where the sorting will start on the given list
+        (the left side of the list)
+    :param int right: the index of where the sorting will end on the given list
+        (the right side of the list)
+    :returns int: the index of the middle point of the sorted list from where it
+        will be separated into two lists and recursed (divide-and-conquer)
+    '''
     pivot = list[right]  # arbitrarily picking the last node
 
     i = left - 1
