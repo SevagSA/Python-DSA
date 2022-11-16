@@ -15,7 +15,7 @@ class ListNode:
 
 class Solution:
 
-    def sortList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+    def sort_list(self, head: Optional[ListNode]) -> Optional[ListNode]:
         # if head is empty, return head, i.e. None
         # if head.next is empty, i.e. 1 element in list, return head
         if not head or not head.next:
