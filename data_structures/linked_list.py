@@ -57,10 +57,9 @@ class LinkedList:
         self.length += 1
         return self.tail
 
-
-def add_multiple_nodes(self, values) -> None:
-    for value in values:
-        self.add_node(value)
+    def add_multiple_nodes(self, values) -> None:
+        for value in values:
+            self.add_tail(value)
 
 
 class DoublyLinkedList(LinkedList):
