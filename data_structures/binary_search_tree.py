@@ -101,8 +101,8 @@ class BinarySearchTree():
     def postorder_print(self, start: Node) -> None:
         '''Left -> Right -> Root'''
         if start:
-            self.inorder_print(start.left)
-            self.inorder_print(start.right)
+            self.postorder_print(start.left)
+            self.postorder_print(start.right)
             print(str(start.data) + ' ', end='')
 
 
